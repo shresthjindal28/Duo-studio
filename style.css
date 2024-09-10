@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'pp mori';
+    color: #fff;
+    /* overflow-x: hidden; */
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+}
+
+.main{
+    background-color: #0F0D0D;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+#nav{
+    height: 55px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#nav img{
+    height: 24px;
+}
+#nav-Part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#nav #circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav h4{
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: pp mori;
+    margin-top: 12vw;
+    margin-left: 6vw;
+
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: pp mori;
+    margin-left: 26vw;
+}
+.page1 video{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 10vw;
+}
+
+.page2{
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #0F0D0D;
+    position: relative;
+    z-index: 9;
+}
+
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 400;
+    font-family: pp mori;
+    color: #0F0D0D;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.page-toLeft{
+    width: 38%;
+}
+.page-toRight{
+    width: 24%;
+}
+.page-toLeft h2{
+    font-size: 4vw;
+    font-weight: 300;
+    color: #0F0D0D;
+    line-height: 4vw;
+}
+.page-toRight p{
+    font-size: 28px;
+    color: #0F0D0D;
+}
+.page-toRight button{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #EDBFFF;
+    color:#111 ;
+    border: none;
+    padding: 4px 0;
+    margin-top: 20px;
+}
+
+.page3{
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    border-bottom: 2px solid #0F0D0D;
+    z-index: 9;
+}
+.page3 h1{
+    font-size: 6.8vw;
+    color: #111;
+    font-weight: 300;
+    margin:0  0 50px 150px;
+    font-family: 'pp mori';
+
+}
+.page3-Part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3-Part1 img:nth-child(1){
+    height: 500px;
+    margin-top: 100px;
+    margin-left: -400px;
+}
+.page3-Part1 img:nth-child(2){
+    height: 500px;
+    margin-right: -400px;
+}
+.page4{
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 80px;
+    font-family: 'pp mori';
+    margin-top: 100px;
+    /* background-color: #0F0D0D; */
+}
+.elem{
+    /* background-color: salmon; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'pp mori';
+}
+.elem img{
+    position: absolute;
+    opacity: 0; 
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+    left: 9%;
+    height: 400px;
+}
+.elem img:nth-child(3){
+    height: 280px;
+    margin-top: 250px;
+    right: 2.5%;
+    z-index: 7;
+}
+.text{
+    height: 100px;
+    overflow: hidden;
+    z-index: 9;
+}
+.elem h1{
+    font-size: 7.3vw;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #DCAEEE;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+.page4 #three img:nth-child(1){
+    height: 250px;
+    left: 0;
+    margin-bottom: 300px;
+}
+.page4 #three img:nth-child(3){
+    height: 400px;
+    margin-bottom: 200px;
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: red;
+    position: relative;
+    z-index: 9;
+}
